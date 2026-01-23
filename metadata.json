@@ -1,0 +1,6 @@
+
+{
+  "name": "EuroOccazMotors Premium",
+  "description": "A premium European used car dealership platform with advanced filtering, booking systems, and an AI-powered vehicle assistant.",
+  "requestFramePermissions": ["camera", "microphone"]
+}
