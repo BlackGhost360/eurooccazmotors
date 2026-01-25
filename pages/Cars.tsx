@@ -4,6 +4,7 @@ import { Search, SlidersHorizontal, Grid, List, RotateCcw, ChevronLeft, ChevronR
 import { CARS } from '../constants';
 import CarCard from '../components/CarCard';
 import { useTranslation } from 'react-i18next';
+import { useMetaTags } from '../hooks/useMetaTags';
 
 const ITEMS_PER_PAGE = 6;
 
@@ -14,6 +15,15 @@ const Cars: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [maxPrice, setMaxPrice] = useState(250000);
   const [currentPage, setCurrentPage] = useState(1);
+
+  // Meta tags SEO
+  useMetaTags({
+    title: t('seo.cars.title'),
+    description: t('seo.cars.description'),
+    keywords: t('seo.cars.keywords'),
+    ogImage: 'https://eurooccazmotors.com/og-cars.jpg',
+    ogType: 'website'
+  });
 
   const brands = useMemo(() => ['All', ...new Set(CARS.map(c => c.brand))].sort(), []);
   const types = useMemo(() => ['All', ...new Set(CARS.map(c => c.category))].sort(), []);

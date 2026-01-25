@@ -1,6 +1,7 @@
 
 import React from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useParams, Navigate } from 'react-router-dom';
+import { LanguageProvider } from './contexts/LanguageContext';
 import Layout from './components/Layout';
 import Home from './pages/Home';
 import Cars from './pages/Cars';
@@ -44,19 +45,45 @@ const Services: React.FC = () => {
   );
 };
 
+// Route Wrapper avec support de la langue
+const LanguageRouteWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  const { lang } = useParams<{ lang?: string }>();
+
+  if (lang && !['fr', 'en', 'it'].includes(lang)) {
+    return <Navigate to="/fr/" replace />;
+  }
+
+  return <>{children}</>;
+};
+
 const App: React.FC = () => {
   return (
-    <Router>
-      <Layout>
+    <Router basename="/eurooccazmotors">
+      <LanguageProvider>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/cars" element={<Cars />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/reservation" element={<Reservation />} />
-          <Route path="/contact" element={<Contact />} />
+          {/* Redirection racine vers /fr/ */}
+          <Route path="/" element={<Navigate to="/fr/" replace />} />
+          
+          {/* Routes avec paramètre de langue */}
+          <Route
+            path="/:lang/*"
+            element={
+              <LanguageRouteWrapper>
+                <Layout>
+                  <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/cars" element={<Cars />} />
+                    <Route path="/services" element={<Services />} />
+                    <Route path="/reservation" element={<Reservation />} />
+                    <Route path="/contact" element={<Contact />} />
+                  </Routes>
+                </Layout>
+                <GeminiAssistant />
+              </LanguageRouteWrapper>
+            }
+          />
         </Routes>
-      </Layout>
-      <GeminiAssistant />
+      </LanguageProvider>
     </Router>
   );
 };

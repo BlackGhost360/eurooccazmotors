@@ -1,6 +1,33 @@
 export const resources = {
   fr: {
     translation: {
+      seo: {
+        home: {
+          title: "EuroOccazMotors - Voitures d'occasion premium en France",
+          description: "Découvrez des voitures d'occasion certifiées importées d'Europe. Sélection exclusive de véhicules premium garantis. Livraison sécurisée en France.",
+          keywords: "voiture occasion premium, import auto Europe, voiture certifiée, automobile occasion"
+        },
+        cars: {
+          title: "Nos voitures - Stock de véhicules premium | EuroOccazMotors",
+          description: "Parcourez notre sélection de véhicules d'occasion premium certifiés. Filtrez par marque, catégorie et prix pour trouver votre voiture idéale.",
+          keywords: "voiture occasion, auto premium, stock automobile, achat voiture d'occasion"
+        },
+        services: {
+          title: "Services automobile | EuroOccazMotors",
+          description: "Découvrez nos services : importation directe, garantie premium, financement express, livraison sécurisée.",
+          keywords: "services automobile, garantie voiture, financement auto, logistique automobile"
+        },
+        reservation: {
+          title: "Réservez votre véhicule | EuroOccazMotors",
+          description: "Réservez votre voiture d'occasion en quelques clics. Acompte sécurisé et financement flexible disponibles.",
+          keywords: "réserver voiture, achat automobile, financement auto, reservation voiture"
+        },
+        contact: {
+          title: "Nous contacter | EuroOccazMotors",
+          description: "Contactez notre équipe pour toute question sur notre sélection de véhicules ou nos services.",
+          keywords: "contact, support client, assistance automobile"
+        }
+      },
       nav: {
         home: "Accueil",
         cars: "Nos Voitures",
@@ -72,6 +99,7 @@ export const resources = {
           lastName: "Nom",
           email: "Email professionnel",
           phone: "Téléphone",
+          address: "Adresse complète",
           payment: "Mode de paiement souhaité",
           cash: "Comptant",
           cashSub: "Virement sécurisé",
@@ -83,7 +111,8 @@ export const resources = {
           messagePlaceholder: "Dites-nous en plus sur vos besoins...",
           consent: "J'accepte que mes données soient traitées par EuroOccazMotors.",
           submit: "Confirmer la réservation",
-          processing: "Traitement en cours..."
+          processing: "Traitement en cours...",
+          error: "Erreur lors de votre réservation, veuillez réessayer plus tard."
         },
         summary: {
           title: "Récapitulatif",
@@ -108,7 +137,7 @@ export const resources = {
         info: {
           address: "12 Avenue des Champs-Élysées, 75008 Paris",
           phone: "+33 1 23 45 67 89",
-          email: "contact@eurooccazmotors.eu",
+          email: "contact@eurooccazmotors.com",
           hours: "Lun - Sam : 09h00 - 19h00",
           emergency: "Assistance 24/7"
         },
@@ -117,6 +146,7 @@ export const resources = {
           email: "Email professionnel",
           phone: "Téléphone",
           subject: "Objet de votre demande",
+          errorSend: "Erreur lors de l’envoi, veuillez réessayer plus tard.",
           subjects: {
             buy: "Achat d'un véhicule",
             sell: "Reprise de mon véhicule",
@@ -126,6 +156,7 @@ export const resources = {
           },
           message: "Votre message",
           submit: "Envoyer ma demande",
+          submiting: "Envoi...",
           success: "Message envoyé avec succès !"
         },
         faq: {
@@ -198,6 +229,33 @@ export const resources = {
   },
   en: {
     translation: {
+      seo: {
+        home: {
+          title: "EuroOccazMotors - Premium Used Cars in France",
+          description: "Discover certified used cars imported from Europe. Exclusive selection of premium guaranteed vehicles. Secure delivery across France.",
+          keywords: "used premium cars, import cars Europe, certified vehicles, premium automobiles"
+        },
+        cars: {
+          title: "Our Cars - Premium Vehicles Stock | EuroOccazMotors",
+          description: "Browse our selection of certified premium used vehicles. Filter by brand, category and price to find your ideal car.",
+          keywords: "used cars, premium cars, car stock, buy used car"
+        },
+        services: {
+          title: "Automobile Services | EuroOccazMotors",
+          description: "Discover our services: direct import, premium warranty, express financing, secure delivery.",
+          keywords: "car services, vehicle warranty, car financing, automobile logistics"
+        },
+        reservation: {
+          title: "Book Your Vehicle | EuroOccazMotors",
+          description: "Reserve your used car in a few clicks. Secure deposit and flexible financing available.",
+          keywords: "book car, buy car, car financing, vehicle reservation"
+        },
+        contact: {
+          title: "Contact Us | EuroOccazMotors",
+          description: "Contact our team for any questions about our vehicle selection or services.",
+          keywords: "contact, customer support, car assistance"
+        }
+      },
       nav: {
         home: "Home",
         cars: "Our Cars",
@@ -269,6 +327,7 @@ export const resources = {
           lastName: "Last Name",
           email: "Business Email",
           phone: "Phone",
+          address: "Full address",
           payment: "Desired payment method",
           cash: "Cash",
           cashSub: "Secure Transfer",
@@ -280,7 +339,9 @@ export const resources = {
           messagePlaceholder: "Tell us more about your needs...",
           consent: "I agree to my data being processed by EuroOccazMotors.",
           submit: "Confirm Reservation",
-          processing: "Processing..."
+          processing: "Processing...",
+          error: "Error with your booking, please try again later."
+
         },
         summary: {
           title: "Summary",
@@ -305,7 +366,7 @@ export const resources = {
         info: {
           address: "12 Avenue des Champs-Élysées, 75008 Paris",
           phone: "+33 1 23 45 67 89",
-          email: "contact@eurooccazmotors.eu",
+          email: "contact@eurooccazmotors.com",
           hours: "Mon - Sat: 09:00 - 19:00",
           emergency: "24/7 Assistance"
         },
@@ -314,6 +375,7 @@ export const resources = {
           email: "Business Email",
           phone: "Phone",
           subject: "Subject of your request",
+          errorSend: "Error while sending, please try again later.",
           subjects: {
             buy: "Buying a vehicle",
             sell: "Selling my vehicle",
@@ -323,6 +385,7 @@ export const resources = {
           },
           message: "Your message",
           submit: "Send my request",
+          submiting: "Sending...",
           success: "Message sent successfully!"
         },
         faq: {
@@ -395,6 +458,33 @@ export const resources = {
   },
   it: {
     translation: {
+      seo: {
+        home: {
+          title: "EuroOccazMotors - Auto usate premium in Francia",
+          description: "Scopri auto usate certificate importate dall'Europa. Selezione esclusiva di veicoli premium garantiti. Consegna sicura in tutta la Francia.",
+          keywords: "auto usate premium, import auto Europa, auto certificate, automobili premium"
+        },
+        cars: {
+          title: "Le Nostre Auto - Stock veicoli premium | EuroOccazMotors",
+          description: "Sfoglia la nostra selezione di veicoli usati premium certificate. Filtra per marca, categoria e prezzo per trovare l'auto ideale.",
+          keywords: "auto usate, auto premium, stock auto, acquisto auto usata"
+        },
+        services: {
+          title: "Servizi Automobilistici | EuroOccazMotors",
+          description: "Scopri i nostri servizi: importazione diretta, garanzia premium, finanziamento express, consegna sicura.",
+          keywords: "servizi auto, garanzia veicoli, finanziamento auto, logistica automobilistica"
+        },
+        reservation: {
+          title: "Prenota il tuo Veicolo | EuroOccazMotors",
+          description: "Prenota la tua auto usata in pochi click. Deposito sicuro e finanziamento flessibile disponibili.",
+          keywords: "prenotare auto, acquistare auto, finanziamento auto, prenotazione veicolo"
+        },
+        contact: {
+          title: "Contattaci | EuroOccazMotors",
+          description: "Contatta il nostro team per domande sulla nostra selezione di veicoli o servizi.",
+          keywords: "contatti, supporto clienti, assistenza auto"
+        }
+      },
       nav: {
         home: "Home",
         cars: "Le Nostre Auto",
@@ -466,6 +556,7 @@ export const resources = {
           lastName: "Cognome",
           email: "Email aziendale",
           phone: "Telefono",
+          address: "Indirizzo completo",
           payment: "Metodo di pagamento desiderato",
           cash: "Contanti",
           cashSub: "Bonifico Sicuro",
@@ -477,7 +568,9 @@ export const resources = {
           messagePlaceholder: "Raccontaci di più sulle tue esigenze...",
           consent: "Accetto che i miei dati siano trattati da EuroOccazMotors.",
           submit: "Conferma Prenotazione",
-          processing: "Elaborazione..."
+          processing: "Elaborazione...",
+          error: "Errore nella prenotazione, riprova più tardi."
+
         },
         summary: {
           title: "Riepilogo",
@@ -502,7 +595,7 @@ export const resources = {
         info: {
           address: "12 Avenue des Champs-Élysées, 75008 Parigi",
           phone: "+33 1 23 45 67 89",
-          email: "contact@eurooccazmotors.eu",
+          email: "contact@eurooccazmotors.com",
           hours: "Lun - Sab: 09:00 - 19:00",
           emergency: "Assistenza 24/7"
         },
@@ -511,6 +604,7 @@ export const resources = {
           email: "Email aziendale",
           phone: "Telefono",
           subject: "Oggetto della tua richiesta",
+          errorSend: "Errore durante l'invio, riprova più tardi.",
           subjects: {
             buy: "Acquisto di un veicolo",
             sell: "Vendita del mio veicolo",
@@ -520,6 +614,7 @@ export const resources = {
           },
           message: "Il tuo messaggio",
           submit: "Invia la mia richiesta",
+          submiting: "Inviare...",
           success: "Messaggio inviato con successo!"
         },
         faq: {

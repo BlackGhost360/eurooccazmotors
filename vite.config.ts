@@ -5,10 +5,14 @@ import react from '@vitejs/plugin-react';
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
-      base: process.env.VITE_BASE_PATH || '/',
+      base: process.env.VITE_BASE_PATH || '/eurooccazmotors/',
       server: {
         port: 3000,
         host: '0.0.0.0',
+        middlewareMode: false,
+      },
+      preview: {
+        port: 3000,
       },
       plugins: [react()],
       define: {
