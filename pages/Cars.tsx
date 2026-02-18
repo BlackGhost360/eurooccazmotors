@@ -6,7 +6,7 @@ import CarCard from '../components/CarCard';
 import { useTranslation } from 'react-i18next';
 import { useMetaTags } from '../hooks/useMetaTags';
 
-const ITEMS_PER_PAGE = 6;
+const ITEMS_PER_PAGE = 10;
 
 const Cars: React.FC = () => {
   const { t } = useTranslation();
@@ -182,41 +182,44 @@ const Cars: React.FC = () => {
                 </div>
 
                 {/* Pagination Controls */}
-                {totalPages > 1 && (
-                  <div className="flex justify-center items-center gap-3">
-                    <button 
-                      onClick={() => setCurrentPage(prev => Math.max(1, prev - 1))}
-                      disabled={currentPage === 1}
-                      className="p-4 bg-white border border-slate-100 rounded-2xl text-slate-600 hover:text-blue-600 hover:shadow-md disabled:opacity-30 disabled:hover:text-slate-600 transition-all"
-                    >
-                      <ChevronLeft size={24} />
-                    </button>
-                    
-                    <div className="flex items-center gap-2">
-                      {[...Array(totalPages)].map((_, i) => (
-                        <button
-                          key={i}
-                          onClick={() => setCurrentPage(i + 1)}
-                          className={`w-12 h-12 rounded-2xl font-black transition-all ${
-                            currentPage === i + 1 
-                            ? 'bg-blue-600 text-white shadow-lg shadow-blue-600/30' 
-                            : 'bg-white border border-slate-100 text-slate-400 hover:border-blue-200 hover:text-blue-600'
-                          }`}
-                        >
-                          {i + 1}
-                        </button>
-                      ))}
-                    </div>
+{totalPages > 1 && (
+  <div className="flex flex-wrap justify-center items-center gap-3">
 
-                    <button 
-                      onClick={() => setCurrentPage(prev => Math.min(totalPages, prev + 1))}
-                      disabled={currentPage === totalPages}
-                      className="p-4 bg-white border border-slate-100 rounded-2xl text-slate-600 hover:text-blue-600 hover:shadow-md disabled:opacity-30 disabled:hover:text-slate-600 transition-all"
-                    >
-                      <ChevronRight size={24} />
-                    </button>
-                  </div>
-                )}
+    <button 
+      onClick={() => setCurrentPage(prev => Math.max(1, prev - 1))}
+      disabled={currentPage === 1}
+      className="p-3 sm:p-4 bg-white border border-slate-100 rounded-2xl text-slate-600 hover:text-blue-600 hover:shadow-md disabled:opacity-30 disabled:hover:text-slate-600 transition-all"
+    >
+      <ChevronLeft size={20} className="sm:w-6 sm:h-6" />
+    </button>
+    
+    <div className="flex flex-wrap justify-center items-center gap-2 max-w-full">
+      {[...Array(totalPages)].map((_, i) => (
+        <button
+          key={i}
+          onClick={() => setCurrentPage(i + 1)}
+          className={`w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl font-bold sm:font-black text-sm sm:text-base transition-all ${
+            currentPage === i + 1 
+            ? 'bg-blue-600 text-white shadow-lg shadow-blue-600/30' 
+            : 'bg-white border border-slate-100 text-slate-400 hover:border-blue-200 hover:text-blue-600'
+          }`}
+        >
+          {i + 1}
+        </button>
+      ))}
+    </div>
+
+    <button 
+      onClick={() => setCurrentPage(prev => Math.min(totalPages, prev + 1))}
+      disabled={currentPage === totalPages}
+      className="p-3 sm:p-4 bg-white border border-slate-100 rounded-2xl text-slate-600 hover:text-blue-600 hover:shadow-md disabled:opacity-30 disabled:hover:text-slate-600 transition-all"
+    >
+      <ChevronRight size={20} className="sm:w-6 sm:h-6" />
+    </button>
+
+              </div>
+            )}
+
               </>
             ) : (
               <div className="bg-white p-24 rounded-[3rem] text-center border border-slate-100 shadow-sm">

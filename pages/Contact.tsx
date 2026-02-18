@@ -164,50 +164,114 @@ const handleSubmit = async (e: React.FormEvent) => {
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
 
-                <input name="nom_prenom" value={formData.nom_prenom} onChange={handleChange}
-                  required placeholder={t('contact.placeholderName')}
-                  className="w-full p-4 border rounded-2xl" />
+  <input
+    type="text"
+    name="nom_prenom"
+    data-testid="contact-nom"
+    aria-label="Nom et prénom"
+    value={formData.nom_prenom}
+    onChange={handleChange}
+    required
+    autoComplete="name"
+    placeholder={t('contact.placeholderName')}
+    className="w-full p-4 border rounded-2xl"
+  />
 
-                <input name="email" type="email" value={formData.email} onChange={handleChange}
-                  required placeholder={t('contact.placeholderEmail')}
-                  className="w-full p-4 border rounded-2xl" />
+  <input
+    type="email"
+    name="email"
+    data-testid="contact-email"
+    aria-label="Adresse email"
+    value={formData.email}
+    onChange={handleChange}
+    required
+    autoComplete="email"
+    placeholder={t('contact.placeholderEmail')}
+    className="w-full p-4 border rounded-2xl"
+  />
 
-                <input name="telephone" value={formData.telephone} onChange={handleChange}
-                  required placeholder={t('contact.placeholderPhone')}
-                  className="w-full p-4 border rounded-2xl" />
+  <input
+    type="tel"
+    name="telephone"
+    data-testid="contact-telephone"
+    aria-label="Numéro de téléphone"
+    value={formData.telephone}
+    onChange={handleChange}
+    required
+    autoComplete="tel"
+    placeholder={t('contact.placeholderPhone')}
+    className="w-full p-4 border rounded-2xl"
+  />
 
-                <select name="objet" value={formData.objet} onChange={handleChange}
-                  required className="w-full p-4 border rounded-2xl">
-                  <option value="">{t('contact.form.subject')}</option>
-                  <option value="Achat d'un véhicule">{t('contact.form.subjects.buy')}</option>
-                  <option value="Reprise de mon véhicule">{t('contact.form.subjects.sell')}</option>
-                  <option value="Question sur l'importation">{t('contact.form.subjects.import')}</option>
-                  <option value="Autre demande">{t('contact.form.subjects.sav')}</option>
-                </select>
+  <select
+    name="objet"
+    data-testid="contact-objet"
+    aria-label="Objet de la demande"
+    value={formData.objet}
+    onChange={handleChange}
+    required
+    className="w-full p-4 border rounded-2xl"
+  >
+    <option value="">{t('contact.form.subject')}</option>
+    <option value="Achat d'un véhicule">
+      {t('contact.form.subjects.buy')}
+    </option>
+    <option value="Reprise de mon véhicule">
+      {t('contact.form.subjects.sell')}
+    </option>
+    <option value="Question sur l'importation">
+      {t('contact.form.subjects.import')}
+    </option>
+    <option value="Autre demande">
+      {t('contact.form.subjects.sav')}
+    </option>
+  </select>
 
-                <textarea name="message" value={formData.message} onChange={handleChange}
-                  required rows={5}
-                  placeholder={t('contact.placeholderDetailsMessage')}
-                  className="w-full p-4 border rounded-2xl" />
+  <textarea
+    name="message"
+    data-testid="contact-message"
+    aria-label="Message"
+    value={formData.message}
+    onChange={handleChange}
+    required
+    rows={5}
+    placeholder={t('contact.placeholderDetailsMessage')}
+    className="w-full p-4 border rounded-2xl"
+  />
 
-                {errorPopup && (
-                  <div className="animate-in slide-in-from-bottom fade-in duration-300
-                                  mb-4 p-4 rounded-2xl border border-red-200
-                                  bg-red-50 text-red-700 font-semibold text-sm
-                                  flex items-center gap-3 shadow-lg">
-                    <span className="w-2 h-2 bg-red-600 rounded-full"></span>
-                    {errorPopup}
-                  </div>
-                )}
+  {errorPopup && (
+    <div
+      data-testid="contact-error"
+      role="alert"
+      className="animate-in slide-in-from-bottom fade-in duration-300
+                 mb-4 p-4 rounded-2xl border border-red-200
+                 bg-red-50 text-red-700 font-semibold text-sm
+                 flex items-center gap-3 shadow-lg"
+    >
+      <span className="w-2 h-2 bg-red-600 rounded-full"></span>
+      {errorPopup}
+    </div>
+  )}
 
+  <button
+    type="submit"
+    data-testid="contact-submit"
+    disabled={isSubmitting}
+    className="w-full py-5 bg-blue-600 text-white rounded-2xl
+               font-black flex justify-center gap-3"
+  >
+    {isSubmitting ? (
+      <Loader2 className="animate-spin" />
+    ) : (
+      <Send />
+    )}
+    {isSubmitting
+      ? t('contact.form.submiting')
+      : t('contact.form.submit')}
+  </button>
 
-                <button disabled={isSubmitting}
-                  className="w-full py-5 bg-blue-600 text-white rounded-2xl font-black flex justify-center gap-3">
-                  {isSubmitting ? <Loader2 className="animate-spin" /> : <Send />}
-                  {isSubmitting ? t('contact.form.submiting') : t('contact.form.submit')}
-                </button>
+</form>
 
-              </form>
             )}
           </div>
         </div>
