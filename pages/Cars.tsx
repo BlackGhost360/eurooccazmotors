@@ -13,7 +13,7 @@ const Cars: React.FC = () => {
   const [filterBrand, setFilterBrand] = useState('All');
   const [filterType, setFilterType] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
-  const [maxPrice, setMaxPrice] = useState(250000);
+  const [maxPrice, setMaxPrice] = useState(350000);
   const [currentPage, setCurrentPage] = useState(1);
 
   // Meta tags SEO

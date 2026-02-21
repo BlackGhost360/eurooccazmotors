@@ -78,7 +78,7 @@ const App: React.FC = () => {
                     <Route path="/contact" element={<Contact />} />
                   </Routes>
                 </Layout>
-                <GeminiAssistant />
+                {/*<GeminiAssistant />*/}
               </LanguageRouteWrapper>
             }
           />

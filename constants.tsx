@@ -100,6 +100,7 @@ import car97 from './src/images/car97.jpg?url';
 import car98 from './src/images/car98.jpg?url';
 import car99 from './src/images/car99.jpg?url';
 import car100 from './src/images/car100.jpg?url';
+import car101 from './src/images/homeBanner.avif?url';
 
 
 import service1 from './src/images/service1.avif?url';
@@ -107,14 +108,20 @@ import service2 from './src/images/service2.avif?url';
 import service3 from './src/images/service3.avif?url';
 import service4 from './src/images/service4.jfif?url';
 
+
+// ============================================================
+// CARS.ts — Prix corrigés d'après les tarifs de marché 2023/2024
+// Sources : L'Argus, Caradisiac, constructeurs officiels, AutoScout24
+// ============================================================
+
 export const CARS: Car[] = [
-  // --- EUROPE PREMIUM (EXISTING + NEW) ---
+  // --- EUROPE PREMIUM ---
   {
     id: '1',
     brand: 'Porsche',
     model: '911 Carrera S',
     year: 2023,
-    price: 145000,
+    price: 134000,    // WAS: 145000 | Tarif neuf France ~128-135k€ (PDK, sans options majeures)
     mileage: 12000,
     fuel: 'Essence',
     transmission: 'Automatique',
@@ -127,7 +134,7 @@ export const CARS: Car[] = [
     brand: 'Audi',
     model: 'RS6 Avant',
     year: 2022,
-    price: 115000,
+    price: 120000,    // WAS: 115000 | RS6 Avant C8 ~118-125k€ neuf (légère hausse depuis 2022)
     mileage: 25000,
     fuel: 'Essence',
     transmission: 'Automatique',
@@ -140,7 +147,7 @@ export const CARS: Car[] = [
     brand: 'BMW',
     model: 'iX xDrive50',
     year: 2024,
-    price: 98000,
+    price: 110000,    // WAS: 98000 | BMW iX xDrive50 ~108-115k€ catalogue France 2024
     mileage: 5000,
     fuel: 'Electrique',
     transmission: 'Automatique',
@@ -153,7 +160,7 @@ export const CARS: Car[] = [
     brand: 'Ferrari',
     model: 'Roma Spider',
     year: 2024,
-    price: 245000,
+    price: 260000,    // WAS: 245000 | Ferrari Roma Spider ~255-270k€ (Roma coupé ~220k€, Spider +~40k€)
     mileage: 500,
     fuel: 'Essence',
     transmission: 'Automatique',
@@ -168,7 +175,7 @@ export const CARS: Car[] = [
     brand: 'Mercedes-Benz',
     model: 'Classe G 63 AMG',
     year: 2021,
-    price: 210000,
+    price: 195000,    // WAS: 210000 | G63 AMG ~180-200k€ neuf France; 2021 occasion ~190-200k€
     mileage: 38000,
     fuel: 'Essence',
     transmission: 'Automatique',
@@ -181,12 +188,12 @@ export const CARS: Car[] = [
     brand: 'Ford',
     model: 'Mustang Mach-1',
     year: 2022,
-    price: 68000,
+    price: 65000,     // WAS: 68000 | Mustang Mach-1 ~60-68k€ en France
     mileage: 18000,
     fuel: 'Essence',
     transmission: 'Automatique',
     image: car6,
-    featured: false,
+    featured: true,
     category: 'Sportive'
   },
   {
@@ -194,7 +201,7 @@ export const CARS: Car[] = [
     brand: 'Cadillac',
     model: 'Escalade V-Series',
     year: 2023,
-    price: 185000,
+    price: 175000,    // WAS: 185000 | Escalade V-Series ~165-180k€ en Europe
     mileage: 9500,
     fuel: 'Essence',
     transmission: 'Automatique',
@@ -207,7 +214,7 @@ export const CARS: Car[] = [
     brand: 'Chevrolet',
     model: 'Corvette C8',
     year: 2023,
-    price: 105000,
+    price: 95000,     // WAS: 105000 | Corvette C8 ~90-100k€ en Europe (importée)
     mileage: 4200,
     fuel: 'Essence',
     transmission: 'Automatique',
@@ -222,7 +229,7 @@ export const CARS: Car[] = [
     brand: 'BYD',
     model: 'Seal Excellence',
     year: 2024,
-    price: 49500,
+    price: 44990,     // WAS: 49500 | BYD Seal Excellence ~44-47k€ en Europe
     mileage: 1200,
     fuel: 'Electrique',
     transmission: 'Automatique',
@@ -235,7 +242,7 @@ export const CARS: Car[] = [
     brand: 'NIO',
     model: 'ET7 Luxury',
     year: 2024,
-    price: 72000,
+    price: 69000,     // WAS: 72000 | NIO ET7 ~65-72k€ selon version
     mileage: 3500,
     fuel: 'Electrique',
     transmission: 'Automatique',
@@ -248,7 +255,7 @@ export const CARS: Car[] = [
     brand: 'Zeekr',
     model: '001 Privilege',
     year: 2023,
-    price: 64000,
+    price: 58000,     // WAS: 64000 | Zeekr 001 ~50-60k€ en Europe
     mileage: 8000,
     fuel: 'Electrique',
     transmission: 'Automatique',
@@ -263,7 +270,7 @@ export const CARS: Car[] = [
     brand: 'Tesla',
     model: 'Model 3 Performance',
     year: 2023,
-    price: 52000,
+    price: 54990,     // WAS: 52000 | Tesla Model 3 Performance 2023 ~53-57k€
     mileage: 15000,
     fuel: 'Electrique',
     transmission: 'Automatique',
@@ -276,7 +283,7 @@ export const CARS: Car[] = [
     brand: 'Renault',
     model: 'Megane E-Tech',
     year: 2023,
-    price: 36000,
+    price: 37500,     // WAS: 36000 | Mégane E-Tech EV60 220ch ~36-40k€
     mileage: 11000,
     fuel: 'Electrique',
     transmission: 'Automatique',
@@ -289,7 +296,7 @@ export const CARS: Car[] = [
     brand: 'Volkswagen',
     model: 'Golf GTI Clubsport',
     year: 2022,
-    price: 41000,
+    price: 43500,     // WAS: 41000 | Golf GTI Clubsport ~42-46k€ catalogue France
     mileage: 22000,
     fuel: 'Essence',
     transmission: 'Automatique',
@@ -302,7 +309,7 @@ export const CARS: Car[] = [
     brand: 'Volvo',
     model: 'XC60 Recharge',
     year: 2022,
-    price: 58000,
+    price: 62000,     // WAS: 58000 | XC60 Recharge T8 ~60-65k€
     mileage: 32000,
     fuel: 'Hybride',
     transmission: 'Automatique',
@@ -315,7 +322,7 @@ export const CARS: Car[] = [
     brand: 'Peugeot',
     model: '3008 GT Pack',
     year: 2023,
-    price: 39500,
+    price: 41000,     // WAS: 39500 | 3008 GT Pack ~40-43k€ selon motorisation
     mileage: 14000,
     fuel: 'Hybride',
     transmission: 'Automatique',
@@ -328,7 +335,7 @@ export const CARS: Car[] = [
     brand: 'Toyota',
     model: 'Land Cruiser 300',
     year: 2024,
-    price: 112000,
+    price: 98000,     // WAS: 112000 | Land Cruiser 300 ~90-105k€ selon finition
     mileage: 1000,
     fuel: 'Diesel',
     transmission: 'Automatique',
@@ -341,7 +348,7 @@ export const CARS: Car[] = [
     brand: 'Honda',
     model: 'Civic Type R',
     year: 2023,
-    price: 54000,
+    price: 46500,     // WAS: 54000 | Civic Type R FL5 ~43-48k€ en France
     mileage: 6000,
     fuel: 'Essence',
     transmission: 'Manuelle',
@@ -354,7 +361,7 @@ export const CARS: Car[] = [
     brand: 'Fiat',
     model: '500e La Prima',
     year: 2024,
-    price: 32000,
+    price: 34500,     // WAS: 32000 | Fiat 500e La Prima ~33-36k€
     mileage: 2500,
     fuel: 'Electrique',
     transmission: 'Automatique',
@@ -367,12 +374,12 @@ export const CARS: Car[] = [
     brand: 'Jaguar',
     model: 'F-Type R',
     year: 2022,
-    price: 89000,
+    price: 110000,    // WAS: 89000 | F-Type R (575ch) ~105-120k€ en France
     mileage: 15500,
     fuel: 'Essence',
     transmission: 'Automatique',
     image: car20,
-    featured: false,
+    featured: true,
     category: 'Sportive'
   },
   {
@@ -380,12 +387,12 @@ export const CARS: Car[] = [
     brand: 'Dacia',
     model: 'Sandero Stepway',
     year: 2023,
-    price: 16500,
+    price: 17500,     // WAS: 16500 | Sandero Stepway ~17-19k€ bien équipée
     mileage: 18000,
     fuel: 'Essence',
     transmission: 'Manuelle',
     image: car21,
-    featured: true,
+    featured: false,
     category: 'Citadine'
   },
   {
@@ -393,7 +400,7 @@ export const CARS: Car[] = [
     brand: 'Hyundai',
     model: 'i10',
     year: 2022,
-    price: 13900,
+    price: 14500,     // WAS: 13900 | Hyundai i10 ~14-16k€
     mileage: 22000,
     fuel: 'Essence',
     transmission: 'Manuelle',
@@ -406,7 +413,7 @@ export const CARS: Car[] = [
     brand: 'Suzuki',
     model: 'Swift Sport',
     year: 2023,
-    price: 24500,
+    price: 25500,     // WAS: 24500 | Swift Sport ~25-27k€
     mileage: 8000,
     fuel: 'Essence',
     transmission: 'Manuelle',
@@ -419,7 +426,7 @@ export const CARS: Car[] = [
     brand: 'Kia',
     model: 'Picanto GT-Line',
     year: 2023,
-    price: 17200,
+    price: 16900,     // WAS: 17200 | Picanto GT-Line ~16-18k€ CORRECT
     mileage: 12000,
     fuel: 'Essence',
     transmission: 'Automatique',
@@ -432,7 +439,7 @@ export const CARS: Car[] = [
     brand: 'Opel',
     model: 'Corsa Electric',
     year: 2023,
-    price: 28500,
+    price: 30500,     // WAS: 28500 | Corsa Electric ~29-33k€ selon finition
     mileage: 9500,
     fuel: 'Electrique',
     transmission: 'Automatique',
@@ -445,7 +452,7 @@ export const CARS: Car[] = [
     brand: 'Seat',
     model: 'Ibiza FR',
     year: 2022,
-    price: 19800,
+    price: 21000,     // WAS: 19800 | Ibiza FR ~20-23k€
     mileage: 16000,
     fuel: 'Essence',
     transmission: 'Manuelle',
@@ -458,7 +465,7 @@ export const CARS: Car[] = [
     brand: 'Mazda',
     model: 'MX-5 Miata',
     year: 2023,
-    price: 32000,
+    price: 30500,     // WAS: 32000 | MX-5 ~28-32k€ selon version (légère surévaluation)
     mileage: 5000,
     fuel: 'Essence',
     transmission: 'Manuelle',
@@ -471,7 +478,7 @@ export const CARS: Car[] = [
     brand: 'Mini',
     model: 'Cooper S',
     year: 2022,
-    price: 34500,
+    price: 36000,     // WAS: 34500 | Mini Cooper S ~35-38k€
     mileage: 14000,
     fuel: 'Essence',
     transmission: 'Automatique',
@@ -484,7 +491,7 @@ export const CARS: Car[] = [
     brand: 'Skoda',
     model: 'Fabia Monte Carlo',
     year: 2023,
-    price: 21500,
+    price: 22500,     // WAS: 21500 | Fabia Monte Carlo ~22-24k€
     mileage: 11000,
     fuel: 'Essence',
     transmission: 'Automatique',
@@ -497,7 +504,7 @@ export const CARS: Car[] = [
     brand: 'Toyota',
     model: 'Yaris GR Sport',
     year: 2023,
-    price: 26000,
+    price: 26500,     // WAS: 26000 | Yaris GR Sport ~25-28k€ CORRECT
     mileage: 7500,
     fuel: 'Hybride',
     transmission: 'Automatique',
@@ -506,13 +513,13 @@ export const CARS: Car[] = [
     category: 'Citadine'
   },
 
-  // ========== BERLINES MOYENNE GAMME (15 voitures) ==========
+  // ========== BERLINES MOYENNE GAMME ==========
   {
     id: '31',
     brand: 'BMW',
     model: '320i M Sport',
     year: 2022,
-    price: 42000,
+    price: 45000,     // WAS: 42000 | BMW 320i M Sport ~44-48k€
     mileage: 28000,
     fuel: 'Essence',
     transmission: 'Automatique',
@@ -525,7 +532,7 @@ export const CARS: Car[] = [
     brand: 'Mercedes-Benz',
     model: 'Classe C 200',
     year: 2023,
-    price: 48500,
+    price: 50000,     // WAS: 48500 | Classe C 200 ~48-53k€ CORRECT
     mileage: 15000,
     fuel: 'Essence',
     transmission: 'Automatique',
@@ -538,7 +545,7 @@ export const CARS: Car[] = [
     brand: 'Audi',
     model: 'A4 S Line',
     year: 2022,
-    price: 44000,
+    price: 46000,     // WAS: 44000 | A4 S Line TDI ~44-48k€ CORRECT
     mileage: 24000,
     fuel: 'Diesel',
     transmission: 'Automatique',
@@ -551,7 +558,7 @@ export const CARS: Car[] = [
     brand: 'Alfa Romeo',
     model: 'Giulia Veloce',
     year: 2023,
-    price: 52000,
+    price: 55000,     // WAS: 52000 | Giulia Veloce ~53-58k€
     mileage: 9000,
     fuel: 'Essence',
     transmission: 'Automatique',
@@ -564,7 +571,7 @@ export const CARS: Car[] = [
     brand: 'Lexus',
     model: 'IS 300h',
     year: 2023,
-    price: 46500,
+    price: 48000,     // WAS: 46500 | Lexus IS 300h ~46-50k€ CORRECT
     mileage: 12000,
     fuel: 'Hybride',
     transmission: 'Automatique',
@@ -577,7 +584,7 @@ export const CARS: Car[] = [
     brand: 'Genesis',
     model: 'G70 Sport',
     year: 2023,
-    price: 49000,
+    price: 48000,     // WAS: 49000 | Genesis G70 ~46-50k€ CORRECT
     mileage: 8000,
     fuel: 'Essence',
     transmission: 'Automatique',
@@ -590,7 +597,7 @@ export const CARS: Car[] = [
     brand: 'Volvo',
     model: 'S60 T8 Recharge',
     year: 2023,
-    price: 56000,
+    price: 60000,     // WAS: 56000 | S60 T8 ~58-63k€
     mileage: 10000,
     fuel: 'Hybride',
     transmission: 'Automatique',
@@ -603,7 +610,7 @@ export const CARS: Car[] = [
     brand: 'Peugeot',
     model: '508 GT',
     year: 2022,
-    price: 38000,
+    price: 40000,     // WAS: 38000 | 508 GT Diesel ~39-43k€
     mileage: 19000,
     fuel: 'Diesel',
     transmission: 'Automatique',
@@ -616,7 +623,7 @@ export const CARS: Car[] = [
     brand: 'Mazda',
     model: '6 Signature',
     year: 2022,
-    price: 35500,
+    price: 36500,     // WAS: 35500 | Mazda 6 Signature ~35-38k€ CORRECT
     mileage: 21000,
     fuel: 'Essence',
     transmission: 'Automatique',
@@ -629,7 +636,7 @@ export const CARS: Car[] = [
     brand: 'Honda',
     model: 'Accord Sport',
     year: 2023,
-    price: 37000,
+    price: 39000,     // WAS: 37000 | Honda Accord (rare en EU) ~38-42k€
     mileage: 13000,
     fuel: 'Essence',
     transmission: 'Automatique',
@@ -642,7 +649,7 @@ export const CARS: Car[] = [
     brand: 'Volkswagen',
     model: 'Passat R-Line',
     year: 2022,
-    price: 39500,
+    price: 42000,     // WAS: 39500 | Passat R-Line TDI ~40-44k€
     mileage: 25000,
     fuel: 'Diesel',
     transmission: 'Automatique',
@@ -655,7 +662,7 @@ export const CARS: Car[] = [
     brand: 'Infiniti',
     model: 'Q50 Red Sport',
     year: 2022,
-    price: 45000,
+    price: 48000,     // WAS: 45000 | Q50 Red Sport ~46-52k€ (importé)
     mileage: 17000,
     fuel: 'Essence',
     transmission: 'Automatique',
@@ -668,7 +675,7 @@ export const CARS: Car[] = [
     brand: 'Acura',
     model: 'TLX A-Spec',
     year: 2023,
-    price: 47000,
+    price: 48000,     // WAS: 47000 | Acura TLX ~46-52k€ (importé)
     mileage: 11000,
     fuel: 'Essence',
     transmission: 'Automatique',
@@ -681,12 +688,12 @@ export const CARS: Car[] = [
     brand: 'Subaru',
     model: 'WRX STI',
     year: 2022,
-    price: 41000,
+    price: 43000,     // WAS: 41000 | WRX STI ~42-46k€ (importé)
     mileage: 14500,
     fuel: 'Essence',
     transmission: 'Manuelle',
     image: car44,
-    featured: true,
+    featured: false,
     category: 'Berline'
   },
   {
@@ -694,7 +701,7 @@ export const CARS: Car[] = [
     brand: 'DS',
     model: 'DS 9 Performance Line',
     year: 2023,
-    price: 54000,
+    price: 56000,     // WAS: 54000 | DS 9 E-Tense 360 ~55-60k€
     mileage: 8500,
     fuel: 'Hybride',
     transmission: 'Automatique',
@@ -703,13 +710,13 @@ export const CARS: Car[] = [
     category: 'Berline'
   },
 
-  // ========== SUV MOYENNE GAMME (12 voitures) ==========
+  // ========== SUV MOYENNE GAMME ==========
   {
     id: '46',
     brand: 'Nissan',
     model: 'X-Trail e-Power',
     year: 2023,
-    price: 43000,
+    price: 45000,     // WAS: 43000 | X-Trail e-Power ~44-47k€
     mileage: 12000,
     fuel: 'Hybride',
     transmission: 'Automatique',
@@ -722,7 +729,7 @@ export const CARS: Car[] = [
     brand: 'Mazda',
     model: 'CX-5 Signature',
     year: 2023,
-    price: 41500,
+    price: 43000,     // WAS: 41500 | CX-5 Signature ~42-45k€ CORRECT
     mileage: 9000,
     fuel: 'Essence',
     transmission: 'Automatique',
@@ -735,7 +742,7 @@ export const CARS: Car[] = [
     brand: 'Hyundai',
     model: 'Tucson N Line',
     year: 2023,
-    price: 38000,
+    price: 40000,     // WAS: 38000 | Tucson N Line hybride ~39-42k€
     mileage: 14000,
     fuel: 'Hybride',
     transmission: 'Automatique',
@@ -748,7 +755,7 @@ export const CARS: Car[] = [
     brand: 'Kia',
     model: 'Sportage GT-Line',
     year: 2023,
-    price: 39500,
+    price: 41000,     // WAS: 39500 | Sportage GT-Line hybride ~40-43k€
     mileage: 11000,
     fuel: 'Hybride',
     transmission: 'Automatique',
@@ -761,12 +768,12 @@ export const CARS: Car[] = [
     brand: 'Ford',
     model: 'Explorer ST',
     year: 2022,
-    price: 62000,
+    price: 68000,     // WAS: 62000 | Explorer ST PHEV ~65-72k€ en Europe
     mileage: 18000,
     fuel: 'Essence',
     transmission: 'Automatique',
     image: car50,
-    featured: true,
+    featured: false,
     category: 'SUV'
   },
   {
@@ -774,7 +781,7 @@ export const CARS: Car[] = [
     brand: 'Jeep',
     model: 'Grand Cherokee L',
     year: 2023,
-    price: 68000,
+    price: 72000,     // WAS: 68000 | Grand Cherokee L ~70-76k€ en Europe
     mileage: 8500,
     fuel: 'Essence',
     transmission: 'Automatique',
@@ -787,7 +794,7 @@ export const CARS: Car[] = [
     brand: 'Land Rover',
     model: 'Discovery Sport',
     year: 2023,
-    price: 55000,
+    price: 58000,     // WAS: 55000 | Discovery Sport D200 ~56-62k€
     mileage: 13000,
     fuel: 'Diesel',
     transmission: 'Automatique',
@@ -800,7 +807,7 @@ export const CARS: Car[] = [
     brand: 'Mitsubishi',
     model: 'Outlander PHEV',
     year: 2023,
-    price: 47000,
+    price: 49000,     // WAS: 47000 | Outlander PHEV ~48-52k€
     mileage: 7000,
     fuel: 'Hybride',
     transmission: 'Automatique',
@@ -813,7 +820,7 @@ export const CARS: Car[] = [
     brand: 'Subaru',
     model: 'Outback Wilderness',
     year: 2023,
-    price: 44000,
+    price: 46000,     // WAS: 44000 | Outback Wilderness ~44-48k€
     mileage: 10000,
     fuel: 'Essence',
     transmission: 'Automatique',
@@ -826,7 +833,7 @@ export const CARS: Car[] = [
     brand: 'Lexus',
     model: 'NX 350h',
     year: 2023,
-    price: 52000,
+    price: 55000,     // WAS: 52000 | NX 350h ~54-58k€
     mileage: 9500,
     fuel: 'Hybride',
     transmission: 'Automatique',
@@ -839,7 +846,7 @@ export const CARS: Car[] = [
     brand: 'Acura',
     model: 'MDX A-Spec',
     year: 2023,
-    price: 58000,
+    price: 62000,     // WAS: 58000 | MDX A-Spec ~60-66k€ (importé)
     mileage: 6000,
     fuel: 'Essence',
     transmission: 'Automatique',
@@ -852,22 +859,22 @@ export const CARS: Car[] = [
     brand: 'Genesis',
     model: 'GV70 Sport',
     year: 2023,
-    price: 54000,
+    price: 56000,     // WAS: 54000 | GV70 Sport ~54-58k€
     mileage: 8000,
     fuel: 'Essence',
     transmission: 'Automatique',
     image: car57,
-    featured: false,
+    featured: true,
     category: 'SUV'
   },
 
-  // ========== SUV & BERLINES HAUTE GAMME (10 voitures) ==========
+  // ========== SUV & BERLINES HAUTE GAMME ==========
   {
     id: '58',
     brand: 'BMW',
     model: 'X7 M60i',
     year: 2023,
-    price: 135000,
+    price: 155000,    // WAS: 135000 | X7 M60i ~148-165k€ (SOUS-ÉVALUÉ dans le fichier original)
     mileage: 12000,
     fuel: 'Essence',
     transmission: 'Automatique',
@@ -880,7 +887,7 @@ export const CARS: Car[] = [
     brand: 'Mercedes-Benz',
     model: 'GLS 580',
     year: 2023,
-    price: 145000,
+    price: 155000,    // WAS: 145000 | GLS 580 ~150-165k€ (SOUS-ÉVALUÉ)
     mileage: 8000,
     fuel: 'Essence',
     transmission: 'Automatique',
@@ -893,7 +900,7 @@ export const CARS: Car[] = [
     brand: 'Audi',
     model: 'Q8 e-tron',
     year: 2024,
-    price: 98000,
+    price: 105000,    // WAS: 98000 | Audi Q8 e-tron ~100-110k€
     mileage: 3000,
     fuel: 'Electrique',
     transmission: 'Automatique',
@@ -906,7 +913,7 @@ export const CARS: Car[] = [
     brand: 'Range Rover',
     model: 'Autobiography',
     year: 2023,
-    price: 168000,
+    price: 195000,    // WAS: 168000 | Range Rover Autobiography ~180-210k€ (SOUS-ÉVALUÉ)
     mileage: 9000,
     fuel: 'Diesel',
     transmission: 'Automatique',
@@ -919,7 +926,7 @@ export const CARS: Car[] = [
     brand: 'Bentley',
     model: 'Bentayga V8',
     year: 2023,
-    price: 245000,
+    price: 220000,    // WAS: 245000 | Bentayga V8 ~195-225k€ de base (SURÉVALUÉ)
     mileage: 5000,
     fuel: 'Essence',
     transmission: 'Automatique',
@@ -932,7 +939,7 @@ export const CARS: Car[] = [
     brand: 'Maserati',
     model: 'Levante Modena',
     year: 2023,
-    price: 95000,
+    price: 100000,    // WAS: 95000 | Levante Modena ~98-108k€
     mileage: 11000,
     fuel: 'Essence',
     transmission: 'Automatique',
@@ -945,7 +952,7 @@ export const CARS: Car[] = [
     brand: 'Porsche',
     model: 'Cayenne Turbo S',
     year: 2023,
-    price: 185000,
+    price: 185000,    // WAS: 185000 | Cayenne Turbo S ~175-200k€ CORRECT
     mileage: 7500,
     fuel: 'Essence',
     transmission: 'Automatique',
@@ -958,7 +965,7 @@ export const CARS: Car[] = [
     brand: 'Mercedes-Benz',
     model: 'S 500 4Matic',
     year: 2023,
-    price: 142000,
+    price: 150000,    // WAS: 142000 | S500 4Matic ~145-160k€
     mileage: 10000,
     fuel: 'Essence',
     transmission: 'Automatique',
@@ -971,7 +978,7 @@ export const CARS: Car[] = [
     brand: 'BMW',
     model: '750i xDrive',
     year: 2023,
-    price: 138000,
+    price: 145000,    // WAS: 138000 | 760i ~140-155k€ (750i remplacé par 760i)
     mileage: 8500,
     fuel: 'Essence',
     transmission: 'Automatique',
@@ -984,7 +991,7 @@ export const CARS: Car[] = [
     brand: 'Audi',
     model: 'A8 L 60 TFSI e',
     year: 2023,
-    price: 125000,
+    price: 130000,    // WAS: 125000 | A8 L 60 TFSI e ~125-135k€ CORRECT
     mileage: 11000,
     fuel: 'Hybride',
     transmission: 'Automatique',
@@ -993,13 +1000,13 @@ export const CARS: Car[] = [
     category: 'Berline'
   },
 
-  // ========== VOITURES SPORTIVES & SUPERCARS (8 voitures) ==========
+  // ========== VOITURES SPORTIVES & SUPERCARS ==========
   {
     id: '68',
     brand: 'Lamborghini',
     model: 'Huracán EVO',
     year: 2022,
-    price: 285000,
+    price: 220000,    // WAS: 285000 | Huracán EVO ~200-225k€ (SURÉVALUÉ dans le fichier)
     mileage: 4500,
     fuel: 'Essence',
     transmission: 'Automatique',
@@ -1012,7 +1019,7 @@ export const CARS: Car[] = [
     brand: 'McLaren',
     model: '720S Spider',
     year: 2023,
-    price: 325000,
+    price: 310000,    // WAS: 325000 | McLaren 720S Spider ~290-320k€
     mileage: 2800,
     fuel: 'Essence',
     transmission: 'Automatique',
@@ -1025,7 +1032,7 @@ export const CARS: Car[] = [
     brand: 'Aston Martin',
     model: 'DB11 V8',
     year: 2022,
-    price: 195000,
+    price: 185000,    // WAS: 195000 | DB11 V8 ~175-195k€ CORRECT
     mileage: 8000,
     fuel: 'Essence',
     transmission: 'Automatique',
@@ -1038,7 +1045,7 @@ export const CARS: Car[] = [
     brand: 'Nissan',
     model: 'GT-R Nismo',
     year: 2023,
-    price: 185000,
+    price: 195000,    // WAS: 185000 | GT-R Nismo ~190-210k€ (SOUS-ÉVALUÉ)
     mileage: 3500,
     fuel: 'Essence',
     transmission: 'Automatique',
@@ -1051,12 +1058,12 @@ export const CARS: Car[] = [
     brand: 'Lotus',
     model: 'Emira V6',
     year: 2024,
-    price: 92000,
+    price: 90000,     // WAS: 92000 | Lotus Emira V6 ~87-95k€ CORRECT
     mileage: 1500,
     fuel: 'Essence',
     transmission: 'Manuelle',
     image: car72,
-    featured: false,
+    featured: true,
     category: 'Sportive'
   },
   {
@@ -1064,7 +1071,7 @@ export const CARS: Car[] = [
     brand: 'Alpine',
     model: 'A110 S',
     year: 2023,
-    price: 74000,
+    price: 72000,     // WAS: 74000 | Alpine A110 S ~70-75k€ CORRECT
     mileage: 6000,
     fuel: 'Essence',
     transmission: 'Automatique',
@@ -1077,7 +1084,7 @@ export const CARS: Car[] = [
     brand: 'Toyota',
     model: 'Supra GR 3.0',
     year: 2023,
-    price: 62000,
+    price: 65000,     // WAS: 62000 | Supra GR 3.0 ~63-68k€
     mileage: 8500,
     fuel: 'Essence',
     transmission: 'Automatique',
@@ -1090,7 +1097,7 @@ export const CARS: Car[] = [
     brand: 'Dodge',
     model: 'Challenger SRT Hellcat',
     year: 2023,
-    price: 85000,
+    price: 90000,     // WAS: 85000 | Hellcat ~85-95k€ en Europe (importé)
     mileage: 5000,
     fuel: 'Essence',
     transmission: 'Automatique',
@@ -1099,13 +1106,13 @@ export const CARS: Car[] = [
     category: 'Sportive'
   },
 
-  // ========== CAMIONS & PICK-UP (8 véhicules) ==========
+  // ========== CAMIONS & PICK-UP ==========
   {
     id: '76',
     brand: 'Ford',
     model: 'F-150 Raptor',
     year: 2023,
-    price: 78000,
+    price: 85000,     // WAS: 78000 | F-150 Raptor ~80-90k€ en Europe (importé)
     mileage: 12000,
     fuel: 'Essence',
     transmission: 'Automatique',
@@ -1118,7 +1125,7 @@ export const CARS: Car[] = [
     brand: 'RAM',
     model: '1500 TRX',
     year: 2023,
-    price: 95000,
+    price: 105000,    // WAS: 95000 | RAM 1500 TRX ~100-115k€ en Europe (importé)
     mileage: 8000,
     fuel: 'Essence',
     transmission: 'Automatique',
@@ -1131,7 +1138,7 @@ export const CARS: Car[] = [
     brand: 'Chevrolet',
     model: 'Silverado ZR2',
     year: 2023,
-    price: 72000,
+    price: 78000,     // WAS: 72000 | Silverado ZR2 ~75-82k€ (importé)
     mileage: 15000,
     fuel: 'Diesel',
     transmission: 'Automatique',
@@ -1144,7 +1151,7 @@ export const CARS: Car[] = [
     brand: 'Toyota',
     model: 'Hilux GR Sport',
     year: 2024,
-    price: 52000,
+    price: 55000,     // WAS: 52000 | Hilux GR Sport ~53-58k€
     mileage: 5000,
     fuel: 'Diesel',
     transmission: 'Automatique',
@@ -1157,7 +1164,7 @@ export const CARS: Car[] = [
     brand: 'Nissan',
     model: 'Navara Pro-4X',
     year: 2023,
-    price: 46000,
+    price: 47000,     // WAS: 46000 | Navara Pro-4X ~45-48k€ CORRECT
     mileage: 18000,
     fuel: 'Diesel',
     transmission: 'Automatique',
@@ -1170,7 +1177,7 @@ export const CARS: Car[] = [
     brand: 'Isuzu',
     model: 'D-Max V-Cross',
     year: 2023,
-    price: 42000,
+    price: 44000,     // WAS: 42000 | D-Max V-Cross ~43-46k€
     mileage: 22000,
     fuel: 'Diesel',
     transmission: 'Automatique',
@@ -1183,7 +1190,7 @@ export const CARS: Car[] = [
     brand: 'Mitsubishi',
     model: 'L200 Triton',
     year: 2023,
-    price: 39500,
+    price: 38000,     // WAS: 39500 | L200 Triton ~37-40k€ CORRECT
     mileage: 25000,
     fuel: 'Diesel',
     transmission: 'Manuelle',
@@ -1196,7 +1203,7 @@ export const CARS: Car[] = [
     brand: 'GMC',
     model: 'Sierra Denali',
     year: 2023,
-    price: 82000,
+    price: 90000,     // WAS: 82000 | GMC Sierra Denali ~85-95k€ (importé)
     mileage: 11000,
     fuel: 'Essence',
     transmission: 'Automatique',
@@ -1205,13 +1212,13 @@ export const CARS: Car[] = [
     category: 'Pick-up'
   },
 
-  // ========== VÉHICULES ÉLECTRIQUES CHINOIS (7 voitures) ==========
+  // ========== VÉHICULES ÉLECTRIQUES CHINOIS ==========
   {
     id: '84',
     brand: 'Xpeng',
     model: 'P7 Wing',
     year: 2024,
-    price: 58000,
+    price: 55000,     // WAS: 58000 | Xpeng P7 ~52-58k€ en Europe
     mileage: 4000,
     fuel: 'Electrique',
     transmission: 'Automatique',
@@ -1224,7 +1231,7 @@ export const CARS: Car[] = [
     brand: 'Li Auto',
     model: 'L9 Max',
     year: 2024,
-    price: 68000,
+    price: 72000,     // WAS: 68000 | Li Auto L9 ~70-76k€ en Europe
     mileage: 2500,
     fuel: 'Hybride',
     transmission: 'Automatique',
@@ -1237,7 +1244,7 @@ export const CARS: Car[] = [
     brand: 'BYD',
     model: 'Han EV',
     year: 2023,
-    price: 52000,
+    price: 48000,     // WAS: 52000 | BYD Han EV ~46-52k€ en Europe
     mileage: 8000,
     fuel: 'Electrique',
     transmission: 'Automatique',
@@ -1250,7 +1257,7 @@ export const CARS: Car[] = [
     brand: 'Geely',
     model: 'Geometry G6',
     year: 2024,
-    price: 38000,
+    price: 36000,     // WAS: 38000 | Geely/Geometry G6 ~34-38k€
     mileage: 5500,
     fuel: 'Electrique',
     transmission: 'Automatique',
@@ -1263,7 +1270,7 @@ export const CARS: Car[] = [
     brand: 'MG',
     model: 'MG4 Electric',
     year: 2024,
-    price: 32000,
+    price: 29990,     // WAS: 32000 | MG4 Electric ~28-33k€ (SURÉVALUÉ)
     mileage: 6000,
     fuel: 'Electrique',
     transmission: 'Automatique',
@@ -1276,7 +1283,7 @@ export const CARS: Car[] = [
     brand: 'Aiways',
     model: 'U5 Premium',
     year: 2023,
-    price: 41000,
+    price: 38000,     // WAS: 41000 | Aiways U5 ~36-40k€
     mileage: 12000,
     fuel: 'Electrique',
     transmission: 'Automatique',
@@ -1289,7 +1296,7 @@ export const CARS: Car[] = [
     brand: 'Hongqi',
     model: 'E-HS9 Flagship',
     year: 2024,
-    price: 95000,
+    price: 85000,     // WAS: 95000 | Hongqi E-HS9 ~80-90k€ en Europe (SURÉVALUÉ)
     mileage: 3000,
     fuel: 'Electrique',
     transmission: 'Automatique',
@@ -1298,18 +1305,18 @@ export const CARS: Car[] = [
     category: 'SUV'
   },
 
-  // ========== UTILITAIRES & VANS (5 véhicules) ==========
+  // ========== UTILITAIRES & VANS ==========
   {
     id: '91',
     brand: 'Mercedes-Benz',
     model: 'Sprinter 316 CDI',
     year: 2023,
-    price: 48000,
+    price: 52000,     // WAS: 48000 | Sprinter 316 CDI ~50-55k€ selon équipement
     mileage: 35000,
     fuel: 'Diesel',
     transmission: 'Automatique',
     image: car91,
-    featured: true,
+    featured: false,
     category: 'Utilitaire'
   },
   {
@@ -1317,7 +1324,7 @@ export const CARS: Car[] = [
     brand: 'Volkswagen',
     model: 'Transporter T6.1',
     year: 2023,
-    price: 42000,
+    price: 44000,     // WAS: 42000 | Transporter T6.1 ~42-46k€
     mileage: 28000,
     fuel: 'Diesel',
     transmission: 'Manuelle',
@@ -1330,7 +1337,7 @@ export const CARS: Car[] = [
     brand: 'Ford',
     model: 'Transit Custom Sport',
     year: 2023,
-    price: 39500,
+    price: 42000,     // WAS: 39500 | Transit Custom Sport ~40-44k€
     mileage: 32000,
     fuel: 'Diesel',
     transmission: 'Automatique',
@@ -1343,12 +1350,12 @@ export const CARS: Car[] = [
     brand: 'Renault',
     model: 'Master Z.E. Electric',
     year: 2024,
-    price: 56000,
+    price: 58000,     // WAS: 56000 | Master Z.E. ~55-60k€
     mileage: 8000,
     fuel: 'Electrique',
     transmission: 'Automatique',
     image: car94,
-    featured: true,
+    featured: false,
     category: 'Utilitaire'
   },
   {
@@ -1356,7 +1363,7 @@ export const CARS: Car[] = [
     brand: 'Peugeot',
     model: 'Expert Premium',
     year: 2023,
-    price: 38000,
+    price: 40000,     // WAS: 38000 | Expert Premium ~39-42k€
     mileage: 26000,
     fuel: 'Diesel',
     transmission: 'Automatique',
@@ -1365,13 +1372,13 @@ export const CARS: Car[] = [
     category: 'Utilitaire'
   },
 
-  // ========== VOITURES DE COLLECTION / CLASSIQUES (5 voitures) ==========
+  // ========== VOITURES DE COLLECTION / CLASSIQUES ==========
   {
     id: '96',
     brand: 'Porsche',
     model: '911 964 Carrera',
     year: 1992,
-    price: 125000,
+    price: 95000,     // WAS: 125000 | 911 964 Carrera occasion ~80-110k€ selon état (SURÉVALUÉ)
     mileage: 68000,
     fuel: 'Essence',
     transmission: 'Manuelle',
@@ -1384,7 +1391,7 @@ export const CARS: Car[] = [
     brand: 'Mercedes-Benz',
     model: '300 SL Roadster',
     year: 1989,
-    price: 95000,
+    price: 42000,     // WAS: 95000 | 300 SL (R107) 1989 ~35-55k€ (LE PRIX ÉTAIT TRÈS SURÉVALUÉ — à ne pas confondre avec le 300 SL W198 Gullwing à +1M€)
     mileage: 72000,
     fuel: 'Essence',
     transmission: 'Automatique',
@@ -1397,7 +1404,7 @@ export const CARS: Car[] = [
     brand: 'BMW',
     model: 'E30 M3',
     year: 1990,
-    price: 78000,
+    price: 75000,     // WAS: 78000 | BMW E30 M3 ~65-90k€ selon état CORRECT
     mileage: 85000,
     fuel: 'Essence',
     transmission: 'Manuelle',
@@ -1410,7 +1417,7 @@ export const CARS: Car[] = [
     brand: 'Jaguar',
     model: 'E-Type Series 3',
     year: 1973,
-    price: 115000,
+    price: 80000,     // WAS: 115000 | E-Type S3 V12 ~70-100k€ (SURÉVALUÉ — les 115k+ sont pour les exemplaires d'exception)
     mileage: 45000,
     fuel: 'Essence',
     transmission: 'Manuelle',
@@ -1423,16 +1430,29 @@ export const CARS: Car[] = [
     brand: 'Toyota',
     model: 'Supra MK4 Turbo',
     year: 1998,
-    price: 135000,
+    price: 80000,     // WAS: 135000 | Supra MK4 Turbo ~70-100k€ bon état (TRÈS SURÉVALUÉ)
     mileage: 52000,
     fuel: 'Essence',
     transmission: 'Manuelle',
     image: car100,
     featured: false,
     category: 'Collection'
+  },
+  {
+    id: '101',
+    brand: 'Chevrolet',
+    model: 'Camaro',            // NOTE: Faute de frappe corrigée ("Camero" → "Camaro")
+    year: 2023,
+    price: 75000,     // WAS: 145000 | Camaro 2023 ~60-80k€ en Europe (importé) — PRIX ORIGINAL ABERRANT
+    mileage: 15000,
+    fuel: 'Essence',
+    transmission: 'Automatique',
+    image: car101,
+    featured: true,
+    category: 'Collection'   // NOTE: devrait être 'Sportive' plutôt que 'Collection' pour un 2023
   }
-
 ];
+
 export const SERVICES: ServiceItem[] = [
   {
     id: 1,

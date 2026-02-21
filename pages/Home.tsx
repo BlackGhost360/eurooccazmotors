@@ -131,28 +131,25 @@ const Home: React.FC = () => {
       </section>
 
       {/* ================= CTA ================= */}
-      <section className="py-20">
+      <section className="py-12 md:py-20">
         <div className="container mx-auto px-4">
-          <div className="bg-blue-600 rounded-[3rem] p-20 text-center shadow-2xl">
-            <h2 className="text-5xl font-black text-white mb-8 uppercase tracking-tighter">
+          <div className="bg-blue-600 rounded-[2rem] md:rounded-[3rem] p-8 md:p-20 text-center shadow-2xl">
+            <h2 className="text-3xl md:text-5xl font-black text-white mb-4 md:mb-8 uppercase tracking-tighter">
               {t('home.ctaTitle')}
             </h2>
-
-            <p className="text-blue-100 mb-12 max-w-2xl mx-auto">
+            <p className="text-sm md:text-base text-blue-100 mb-8 md:mb-12 max-w-2xl mx-auto">
               {t('home.ctaSubtitle')}
             </p>
-
-            <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center">
               <Link
                 to={`/${currentLang}/reservation`}
-                className="bg-white text-blue-600 px-10 py-5 rounded-2xl font-bold text-xl"
+                className="bg-white text-blue-600 px-6 md:px-10 py-3 md:py-5 rounded-2xl font-bold text-base md:text-xl"
               >
                 {t('home.ctaBook')}
               </Link>
-
               <Link
                 to={`/${currentLang}/contact`}
-                className="bg-blue-700 text-white px-10 py-5 rounded-2xl font-bold text-xl"
+                className="bg-blue-700 text-white px-6 md:px-10 py-3 md:py-5 rounded-2xl font-bold text-base md:text-xl"
               >
                 {t('home.ctaContact')}
               </Link>
