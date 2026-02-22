@@ -10,7 +10,7 @@ export interface Car {
   transmission: 'Automatique' | 'Manuelle';
   image: string;
   featured: boolean;
-  category: 'SUV' | 'Berline' | 'Sportive' | 'Citadine';
+  category: 'SUV' | 'Berline' | 'Sportive' | 'Citadine' | 'Collection' |'Utilitaire';
 }
 
 export interface ServiceItem {
