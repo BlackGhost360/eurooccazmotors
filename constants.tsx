@@ -103,6 +103,60 @@ import car100 from './src/images/car100.jpg?url';
 import car101 from './src/images/homeBanner.avif?url';
 
 
+import car102 from './src/images/car102.jpg?url';
+import car103 from './src/images/car103.jpg?url';
+import car104 from './src/images/car104.jpg?url';
+import car105 from './src/images/car105.jpg?url';
+import car106 from './src/images/car106.jpg?url';
+import car107 from './src/images/car107.jpg?url';
+import car108 from './src/images/car108.jpg?url';
+import car109 from './src/images/car109.jpg?url';
+import car110 from './src/images/car110.jpg?url';
+import car111 from './src/images/car111.jpg?url';
+import car112 from './src/images/car112.jpg?url';
+import car113 from './src/images/car113.jpg?url';
+import car114 from './src/images/car114.jpg?url';
+import car115 from './src/images/car115.jpg?url';
+import car116 from './src/images/car116.jpg?url';
+import car117 from './src/images/car117.jpg?url';
+import car118 from './src/images/car118.jpg?url';
+import car119 from './src/images/car119.jpg?url';
+import car120 from './src/images/car120.jpg?url';
+import car121 from './src/images/car121.jpg?url';
+import car122 from './src/images/car122.jpg?url';
+import car123 from './src/images/car123.jpg?url';
+import car124 from './src/images/car124.jpg?url';
+import car125 from './src/images/car125.jpg?url';
+import car126 from './src/images/car126.jpg?url';
+import car127 from './src/images/car127.jpg?url';
+import car128 from './src/images/car128.jpg?url';
+import car129 from './src/images/car129.jpg?url';
+import car130 from './src/images/car130.jpg?url';
+import car131 from './src/images/car131.jpg?url';
+
+
+import car132 from './src/images/car132.jpg?url';
+import car133 from './src/images/car133.jpg?url';
+import car134 from './src/images/car134.jpg?url';
+import car135 from './src/images/car135.jpg?url';
+import car136 from './src/images/car136.jpg?url';
+import car137 from './src/images/car137.jpg?url';
+import car138 from './src/images/car138.jpg?url';
+import car139 from './src/images/car139.jpg?url';
+import car140 from './src/images/car140.jpg?url';
+import car141 from './src/images/car141.jpg?url';
+import car142 from './src/images/car142.jpg?url';
+import car143 from './src/images/car143.jpg?url';
+import car144 from './src/images/car144.jpg?url';
+import car145 from './src/images/car145.jpg?url';
+import car146 from './src/images/car146.jpg?url';
+import car147 from './src/images/car147.jpg?url';
+import car148 from './src/images/car148.jpg?url';
+import car149 from './src/images/car149.jpg?url';
+import car150 from './src/images/car150.jpg?url';
+import car151 from './src/images/car151.jpg?url';
+
+
 import service1 from './src/images/service1.avif?url';
 import service2 from './src/images/service2.avif?url';
 import service3 from './src/images/service3.avif?url';
@@ -213,6 +267,19 @@ export const CARS: Car[] = [
     category: 'Collection'
   },
   {
+    id: '102',
+    brand: 'Renault',
+    model: 'Clio IV Expression',
+    year: 2014,
+    price: 6500,      // [=] Clio IV 2014 ~85 000km → 5 500–7 500€ (lacentrale)
+    mileage: 85000,
+    fuel: 'Essence',
+    transmission: 'Manuelle',
+    image: car102,
+    featured: false,
+    category: 'Citadine'
+  },
+  {
     id: '7',
     brand: 'Porsche',
     model: '911 964 Carrera',
@@ -310,6 +377,19 @@ export const CARS: Car[] = [
     image: car12,
     featured: false,
     category: 'Berline'
+  },
+  {
+    id: '105',
+    brand: 'Ford',
+    model: 'Fiesta Trend',
+    year: 2014,
+    price: 6200,      // [=] Fiesta Mk7 2014 ~88 000km → 5 500–7 000€ (leboncoin)
+    mileage: 88000,
+    fuel: 'Essence',
+    transmission: 'Manuelle',
+    image: car105,
+    featured: false,
+    category: 'Citadine'
   },
   {
     id: '13',
@@ -442,6 +522,19 @@ export const CARS: Car[] = [
     category: 'Citadine'
   },
   {
+    id: '109',
+    brand: 'Hyundai',
+    model: 'i20 Comfort',
+    year: 2014,
+    price: 6000,      // [=] i20 2014 ~83 000km → 5 000–7 000€ (leparking.fr)
+    mileage: 83000,
+    fuel: 'Essence',
+    transmission: 'Manuelle',
+    image: car109,
+    featured: false,
+    category: 'Citadine'
+  },
+  {
     id: '23',
     brand: 'Suzuki',
     model: 'Swift Sport',
@@ -545,7 +638,19 @@ export const CARS: Car[] = [
     featured: false,
     category: 'Citadine'
   },
-
+  {
+    id: '113',
+    brand: 'Skoda',
+    model: 'Fabia II Active',
+    year: 2013,
+    price: 5200,      // [=] Fabia II 2013 ~93 000km → 4 500–6 000€ (lacentrale)
+    mileage: 93000,
+    fuel: 'Essence',
+    transmission: 'Manuelle',
+    image: car113,
+    featured: false,
+    category: 'Citadine'
+  },
   // ─────────────────────────────────────────────
   //  BERLINES MOYENNE GAMME
   // ─────────────────────────────────────────────
@@ -666,6 +771,20 @@ export const CARS: Car[] = [
     featured: false,
     category: 'Berline'
   },
+
+  {
+    id: '120',
+    brand: 'Renault',
+    model: 'Mégane III Business',
+    year: 2013,
+    price: 7200,      // [=] Mégane III 2013 ~99 000km → 6 000–8 000€ (lacentrale)
+    mileage: 99000,
+    fuel: 'Diesel',
+    transmission: 'Manuelle',
+    image: car120,
+    featured: false,
+    category: 'Berline'
+  },
   {
     id: '40',
     brand: 'Honda',
@@ -761,6 +880,19 @@ export const CARS: Car[] = [
     featured: false,
     category: 'SUV'
   },
+   {
+    id: '121',
+    brand: 'Toyota',
+    model: 'Auris I Active',
+    year: 2012,
+    price: 7800,      // [=] Auris I 2012 ~88 000km → 7 000–9 000€ (leparking.fr)
+    mileage: 88000,
+    fuel: 'Hybride',
+    transmission: 'Automatique',
+    image: car121,
+    featured: false,
+    category: 'Berline'
+  },
   {
     id: '47',
     brand: 'Mazda',
@@ -851,6 +983,19 @@ export const CARS: Car[] = [
     image: car53,
     featured: false,
     category: 'SUV'
+  },
+   {
+    id: '122',
+    brand: 'Opel',
+    model: 'Astra J Edition',
+    year: 2013,
+    price: 7000,      // [=] Astra J 2013 ~96 000km → 6 000–8 000€ (leboncoin)
+    mileage: 96000,
+    fuel: 'Diesel',
+    transmission: 'Manuelle',
+    image: car122,
+    featured: false,
+    category: 'Berline'
   },
   {
     id: '54',
@@ -970,6 +1115,18 @@ export const CARS: Car[] = [
     fuel: 'Essence',
     transmission: 'Automatique',
     image: car63,
+    featured: false,
+    category: 'SUV'
+  },{
+    id: '128',
+    brand: 'Dacia',
+    model: 'Duster I Laureate',
+    year: 2015,
+    price: 9500,      // [=] Duster I 4x4 2015 ~82 000km → 8 500–10 500€ (lacentrale)
+    mileage: 82000,
+    fuel: 'Diesel',
+    transmission: 'Manuelle',
+    image: car128,
     featured: false,
     category: 'SUV'
   },
@@ -1120,6 +1277,20 @@ export const CARS: Car[] = [
     featured: false,
     category: 'Sportive'
   },
+  {
+    id: '129',
+    brand: 'Suzuki',
+    model: 'Swift III GL',
+    year: 2013,
+    price: 5800,      // [=] Swift III 2013 ~76 000km → 5 000–6 800€ (leboncoin)
+    mileage: 76000,
+    fuel: 'Essence',
+    transmission: 'Manuelle',
+    image: car129,
+    featured: false,
+    category: 'Citadine'
+  },
+  
   {
     id: '75',
     brand: 'Dodge',
@@ -1486,7 +1657,547 @@ export const CARS: Car[] = [
     image: car101,
     featured: true,
     category: 'Sportive'   // NOTE: Camaro 2023 = Sportive, pas Collection
+  },
+  
+  {
+    id: '103',
+    brand: 'Peugeot',
+    model: '208 Active',
+    year: 2015,
+    price: 7000,      // [=] 208 Active 2015 ~78 000km → 6 000–8 000€ (leboncoin)
+    mileage: 78000,
+    fuel: 'Essence',
+    transmission: 'Manuelle',
+    image: car103,
+    featured: false,
+    category: 'Citadine'
+  },
+  {
+    id: '104',
+    brand: 'Volkswagen',
+    model: 'Polo V Trendline',
+    year: 2013,
+    price: 6000,      // [=] Polo V 2013 ~92 000km → 5 000–7 000€ (lacentrale)
+    mileage: 92000,
+    fuel: 'Essence',
+    transmission: 'Manuelle',
+    image: car104,
+    featured: false,
+    category: 'Citadine'
+  },
+  {
+    id: '106',
+    brand: 'Opel',
+    model: 'Corsa D Edition',
+    year: 2013,
+    price: 5500,      // [=] Corsa D 2013 ~95 000km → 4 500–6 500€ (lacentrale)
+    mileage: 95000,
+    fuel: 'Essence',
+    transmission: 'Manuelle',
+    image: car106,
+    featured: false,
+    category: 'Citadine'
+  },
+  {
+    id: '107',
+    brand: 'Toyota',
+    model: 'Yaris III Active',
+    year: 2015,
+    price: 7500,      // [=] Yaris III 2015 ~72 000km → 6 500–8 500€ (lacentrale)
+    mileage: 72000,
+    fuel: 'Essence',
+    transmission: 'Automatique',
+    image: car107,
+    featured: false,
+    category: 'Citadine'
+  },
+  {
+    id: '108',
+    brand: 'Citroën',
+    model: 'C3 Picasso VTi',
+    year: 2013,
+    price: 5800,      // [=] C3 Picasso 2013 ~96 000km → 4 800–6 500€ (leboncoin)
+    mileage: 96000,
+    fuel: 'Essence',
+    transmission: 'Manuelle',
+    image: car108,
+    featured: false,
+    category: 'Citadine'
+  },
+  {
+    id: '110',
+    brand: 'Kia',
+    model: 'Rio III Style',
+    year: 2014,
+    price: 6500,      // [=] Rio III 2014 ~80 000km → 5 500–7 500€ (lacentrale)
+    mileage: 80000,
+    fuel: 'Essence',
+    transmission: 'Manuelle',
+    image: car110,
+    featured: false,
+    category: 'Citadine'
+  },
+  {
+    id: '111',
+    brand: 'Seat',
+    model: 'Ibiza III Reference',
+    year: 2012,
+    price: 4500,      // [=] Ibiza III 2012 ~105 000km → 3 500–5 500€ (leboncoin)
+    mileage: 105000,
+    fuel: 'Essence',
+    transmission: 'Manuelle',
+    image: car111,
+    featured: false,
+    category: 'Citadine'
+  },
+  {
+    id: '112',
+    brand: 'Fiat',
+    model: 'Punto Evo Active',
+    year: 2011,
+    price: 3800,      // [=] Punto Evo 2011 ~112 000km → 3 000–4 500€ (leboncoin)
+    mileage: 112000,
+    fuel: 'Essence',
+    transmission: 'Manuelle',
+    image: car112,
+    featured: false,
+    category: 'Citadine'
+  },
+  {
+    id: '114',
+    brand: 'Nissan',
+    model: 'Micra K13',
+    year: 2013,
+    price: 5000,      // [=] Micra K13 2013 ~90 000km → 4 000–6 000€ (leboncoin)
+    mileage: 90000,
+    fuel: 'Essence',
+    transmission: 'Manuelle',
+    image: car114,
+    featured: false,
+    category: 'Citadine'
+  },
+  {
+    id: '115',
+    brand: 'Renault',
+    model: 'Twingo III Life',
+    year: 2016,
+    price: 7200,      // [=] Twingo III 2016 ~68 000km → 6 000–8 000€ (lacentrale)
+    mileage: 68000,
+    fuel: 'Essence',
+    transmission: 'Manuelle',
+    image: car115,
+    featured: false,
+    category: 'Citadine'
+  },
+  {
+    id: '116',
+    brand: 'Peugeot',
+    model: '107 Urban',
+    year: 2012,
+    price: 4200,      // [=] 107 2012 ~78 000km → 3 500–5 000€ (leboncoin)
+    mileage: 78000,
+    fuel: 'Essence',
+    transmission: 'Manuelle',
+    image: car116,
+    featured: false,
+    category: 'Citadine'
+  },
+  {
+    id: '117',
+    brand: 'Volkswagen',
+    model: 'Golf VI Trendline',
+    year: 2011,
+    price: 8500,      // [=] Golf VI 2011 ~105 000km → 7 500–9 500€ (lacentrale)
+    mileage: 105000,
+    fuel: 'Essence',
+    transmission: 'Manuelle',
+    image: car117,
+    featured: false,
+    category: 'Berline'
+  },
+  {
+    id: '118',
+    brand: 'Citroën',
+    model: 'C4 II Tendance',
+    year: 2013,
+    price: 7000,      // [=] C4 II 2013 ~94 000km → 6 000–8 000€ (leboncoin)
+    mileage: 94000,
+    fuel: 'Diesel',
+    transmission: 'Manuelle',
+    image: car118,
+    featured: false,
+    category: 'Berline'
+  },
+  {
+    id: '119',
+    brand: 'Ford',
+    model: 'Focus III Trend',
+    year: 2013,
+    price: 7500,      // [=] Focus III 2013 ~98 000km → 6 500–8 500€ (lacentrale)
+    mileage: 98000,
+    fuel: 'Diesel',
+    transmission: 'Manuelle',
+    image: car119,
+    featured: false,
+    category: 'Berline'
+  }, {
+    id: '123',
+    brand: 'Seat',
+    model: 'León II Reference',
+    year: 2012,
+    price: 6800,      // [=] León II 2012 ~102 000km → 5 500–7 500€ (lacentrale)
+    mileage: 102000,
+    fuel: 'Diesel',
+    transmission: 'Manuelle',
+    image: car123,
+    featured: false,
+    category: 'Berline'
+  },
+  {
+    id: '130',
+    brand: 'Mazda',
+    model: '3 II Active',
+    year: 2012,
+    price: 8000,      // [=] Mazda 3 II 2012 ~96 000km → 7 000–9 000€ (lacentrale)
+    mileage: 96000,
+    fuel: 'Essence',
+    transmission: 'Manuelle',
+    image: car130,
+    featured: false,
+    category: 'Berline'
+  },
+  {
+    id: '131',
+    brand: 'Volkswagen',
+    model: 'Up! Move',
+    year: 2015,
+    price: 5500,      // [=] VW Up! 2015 ~72 000km → 4 500–6 500€ (lacentrale)
+    mileage: 72000,
+    fuel: 'Essence',
+    transmission: 'Manuelle',
+    image: car131,
+    featured: false,
+    category: 'Citadine'
+  },
+
+// ─────────────────────────────────────────────
+//  SECTION B — HAUTE GAMME (80 000 – 400 000 €)
+// ─────────────────────────────────────────────
+
+  {
+    id: '132',
+    brand: 'Lamborghini',
+    model: 'Urus Performante',
+    year: 2023,
+    price: 280000,    // [=] Urus Performante 2023 ~6 000km → 265–295k€ (autoscout24/leparking.fr)
+    mileage: 6000,
+    fuel: 'Essence',
+    transmission: 'Automatique',
+    image: car132,
+    featured: false,
+    category: 'SUV'
+  },
+  {
+    id: '133',
+    brand: 'Ferrari',
+    model: 'SF90 Stradale',
+    year: 2023,
+    price: 530000,    // [=] SF90 Stradale 2023 ~1 200km → 510–560k€ (lacentrale ~540k€)
+    mileage: 1200,
+    fuel: 'Hybride',
+    transmission: 'Automatique',
+    image: car133,
+    featured: false,
+    category: 'Sportive'
+  },
+  {
+    id: '134',
+    brand: 'Rolls-Royce',
+    model: 'Ghost Extended',
+    year: 2023,
+    price: 380000,    // [=] Ghost Extended 2023 ~5 000km → 360–400k€ (autoscout24)
+    mileage: 5000,
+    fuel: 'Essence',
+    transmission: 'Automatique',
+    image: car134,
+    featured: false,
+    category: 'Berline'
+  },
+  {
+    id: '135',
+    brand: 'Bugatti',
+    model: 'Chiron Sport',
+    year: 2021,
+    price: 2900000,   // [=] Chiron Sport 2021 ~3 500km → 2.7–3.1M€ (marché privé Europe)
+    mileage: 3500,
+    fuel: 'Essence',
+    transmission: 'Automatique',
+    image: car135,
+    featured: false,
+    category: 'Sportive'
+  },
+  {
+    id: '136',
+    brand: 'Bentley',
+    model: 'Continental GT Speed',
+    year: 2023,
+    price: 280000,    // [=] Continental GT Speed 2023 ~4 500km → 265–295k€ (lacentrale ~278k€)
+    mileage: 4500,
+    fuel: 'Essence',
+    transmission: 'Automatique',
+    image: car136,
+    featured: false,
+    category: 'Sportive'
+  },
+  {
+    id: '137',
+    brand: 'Aston Martin',
+    model: 'DBS 770 Ultimate',
+    year: 2024,
+    price: 375000,    // [=] DBS 770 Ultimate 2024 ~800km → 355–390k€ (autoscout24)
+    mileage: 800,
+    fuel: 'Essence',
+    transmission: 'Automatique',
+    image: car137,
+    featured: false,
+    category: 'Sportive'
+  },
+  {
+    id: '138',
+    brand: 'McLaren',
+    model: 'Artura Spider',
+    year: 2024,
+    price: 285000,    // [=] Artura Spider 2024 ~1 500km → 270–300k€ (autoscout24/leparking.fr)
+    mileage: 1500,
+    fuel: 'Hybride',
+    transmission: 'Automatique',
+    image: car138,
+    featured: false,
+    category: 'Sportive'
+  },
+  {
+    id: '139',
+    brand: 'Porsche',
+    model: '911 GT3 RS',
+    year: 2023,
+    price: 320000,    // [=] 911 GT3 RS 992 2023 ~2 500km → 305–340k€ (lacentrale ~320k€)
+    mileage: 2500,
+    fuel: 'Essence',
+    transmission: 'Automatique',
+    image: car139,
+    featured: false,
+    category: 'Sportive'
+  },
+  {
+    id: '140',
+    brand: 'Mercedes-Benz',
+    model: 'AMG GT 63 S E Performance',
+    year: 2023,
+    price: 195000,    // [=] AMG GT 63 S E Perf. 2023 ~6 000km → 185–210k€ (leparking.fr ~195k€)
+    mileage: 6000,
+    fuel: 'Hybride',
+    transmission: 'Automatique',
+    image: car140,
+    featured: false,
+    category: 'Sportive'
+  },
+  {
+    id: '141',
+    brand: 'BMW',
+    model: 'M8 Competition Gran Coupé',
+    year: 2023,
+    price: 148000,    // [=] M8 Competition GC 2023 ~7 500km → 140–158k€ (lacentrale)
+    mileage: 7500,
+    fuel: 'Essence',
+    transmission: 'Automatique',
+    image: car141,
+    featured: false,
+    category: 'Sportive'
+  },
+  {
+    id: '124',
+    brand: 'Peugeot',
+    model: '307 SW HDi',
+    year: 2008,
+    price: 3500,      // [=] 307 SW 2008 ~148 000km → 2 800–4 200€ (leboncoin)
+    mileage: 148000,
+    fuel: 'Diesel',
+    transmission: 'Manuelle',
+    image: car124,
+    featured: false,
+    category: 'Berline'
+  },
+  {
+    id: '142',
+    brand: 'Lamborghini',
+    model: 'Huracán Sterrato',
+    year: 2024,
+    price: 270000,    // [=] Huracán Sterrato 2024 ~2 000km → 255–285k€ (autoscout24 ~268k€)
+    mileage: 2000,
+    fuel: 'Essence',
+    transmission: 'Automatique',
+    image: car142,
+    featured: false,
+    category: 'Sportive'
+  },
+  {
+    id: '143',
+    brand: 'Rolls-Royce',
+    model: 'Cullinan Black Badge',
+    year: 2023,
+    price: 430000,    // [=] Cullinan Black Badge 2023 ~4 000km → 410–450k€ (leparking.fr ~430k€)
+    mileage: 4000,
+    fuel: 'Essence',
+    transmission: 'Automatique',
+    image: car143,
+    featured: false,
+    category: 'SUV'
+  },
+  {
+    id: '144',
+    brand: 'Audi',
+    model: 'R8 V10 Performance',
+    year: 2023,
+    price: 185000,    // [=] R8 V10 Perf. 2023 ~3 500km → 175–198k€ (autoscout24/lacentrale)
+    mileage: 3500,
+    fuel: 'Essence',
+    transmission: 'Automatique',
+    image: car144,
+    featured: false,
+    category: 'Sportive'
+  },
+  {
+    id: '145',
+    brand: 'Porsche',
+    model: 'Panamera Turbo S E-Hybrid',
+    year: 2023,
+    price: 195000,    // [=] Panamera Turbo S E-Hyb. 2023 ~7 000km → 185–210k€ (lacentrale ~195k€)
+    mileage: 7000,
+    fuel: 'Hybride',
+    transmission: 'Automatique',
+    image: car145,
+    featured: false,
+    category: 'Berline'
+  },
+  {
+    id: '146',
+    brand: 'Ferrari',
+    model: '296 GTB',
+    year: 2023,
+    price: 310000,    // [=] 296 GTB 2023 ~2 000km → 295–330k€ (lacentrale ~310k€)
+    mileage: 2000,
+    fuel: 'Hybride',
+    transmission: 'Automatique',
+    image: car146,
+    featured: false,
+    category: 'Sportive'
+  },
+  {
+    id: '147',
+    brand: 'Mercedes-Benz',
+    model: 'Maybach S 680',
+    year: 2023,
+    price: 240000,    // [=] Maybach S 680 2023 ~9 000km → 225–255k€ (leparking.fr ~240k€)
+    mileage: 9000,
+    fuel: 'Essence',
+    transmission: 'Automatique',
+    image: car147,
+    featured: false,
+    category: 'Berline'
+  },
+  {
+    id: '148',
+    brand: 'Maserati',
+    model: 'MC20',
+    year: 2023,
+    price: 220000,    // [=] MC20 2023 ~2 800km → 210–235k€ (autoscout24/leparking.fr)
+    mileage: 2800,
+    fuel: 'Essence',
+    transmission: 'Automatique',
+    image: car148,
+    featured: false,
+    category: 'Sportive'
+  },
+  {
+    id: '125',
+    brand: 'Renault',
+    model: 'Kangoo II Expression',
+    year: 2014,
+    price: 7500,      // [=] Kangoo II 2014 ~105 000km → 6 500–8 500€ (lacentrale)
+    mileage: 105000,
+    fuel: 'Diesel',
+    transmission: 'Manuelle',
+    image: car125,
+    featured: false,
+    category: 'Utilitaire'
+  },
+  {
+    id: '126',
+    brand: 'Citroën',
+    model: 'Berlingo II Multispace',
+    year: 2013,
+    price: 7800,      // [=] Berlingo II 2013 ~108 000km → 6 800–8 800€ (lacentrale)
+    mileage: 108000,
+    fuel: 'Diesel',
+    transmission: 'Manuelle',
+    image: car126,
+    featured: false,
+    category: 'Utilitaire'
+  },
+  {
+    id: '149',
+    brand: 'Bentley',
+    model: 'Flying Spur Mulliner',
+    year: 2023,
+    price: 260000,    // [=] Flying Spur Mulliner 2023 ~6 500km → 248–272k€ (lacentrale ~258k€)
+    mileage: 6500,
+    fuel: 'Hybride',
+    transmission: 'Automatique',
+    image: car149,
+    featured: false,
+    category: 'Berline'
+  },
+  {
+    id: '150',
+    brand: 'Porsche',
+    model: 'Taycan Turbo S',
+    year: 2024,
+    price: 145000,    // [=] Taycan Turbo S 2024 ~4 000km → 138–158k€ (lacentrale ~148k€)
+    mileage: 4000,
+    fuel: 'Electrique',
+    transmission: 'Automatique',
+    image: car150,
+    featured: false,
+    category: 'Berline'
+  },
+  {
+    id: '151',
+    brand: 'Koenigsegg',
+    model: 'Gemera',
+    year: 2024,
+    price: 1700000,   // [=] Gemera 2024 ~500km → 1.6–1.8M€ (marché privé Europe, très rare)
+    mileage: 500,
+    fuel: 'Hybride',
+    transmission: 'Automatique',
+    image: car151,
+    featured: false,
+    category: 'Sportive'
+  },
+  {
+    id: '127',
+    brand: 'Dacia',
+    model: 'Logan MCV Ambiance',
+    year: 2015,
+    price: 6200,      // [=] Logan MCV 2015 ~92 000km → 5 200–7 200€ (lacentrale)
+    mileage: 92000,
+    fuel: 'Essence',
+    transmission: 'Manuelle',
+    image: car127,
+    featured: false,
+    category: 'Berline'
   }
+  
+
 ];
 export const SERVICES: ServiceItem[] = [
   {

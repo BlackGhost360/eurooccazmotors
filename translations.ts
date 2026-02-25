@@ -3,8 +3,8 @@ export const resources = {
     translation: {
       seo: {
         home: {
-          title: "EuroOccazMotors - Voitures d'occasion premium en France",
-          description: "Découvrez des voitures d'occasion certifiées importées d'Europe. Sélection exclusive de véhicules premium garantis. Livraison sécurisée en France.",
+          title: "EuroOccazMotors - Voitures d'occasion premium en Europe",
+          description: "Découvrez des voitures d'occasion certifiées importées d'Europe. Sélection exclusive de véhicules premium garantis. Livraison sécurisée en Europe.",
           keywords: "voiture occasion premium, import auto Europe, voiture certifiée, automobile occasion"
         },
         cars: {
@@ -87,7 +87,7 @@ export const resources = {
           import: { title: "Importation Directe", desc: "Accédez au stock européen complet avec nos experts terrain." },
           guarantee: { title: "Garantie Premium", desc: "Extension de garantie constructeur jusqu'à 5 ans." },
           finance: { title: "Financement Express", desc: "Réponse en 24h pour vos crédits et locations longue durée." },
-          logistics: { title: "Logistique & Transport", desc: "Livraison sécurisée partout en France et pays frontaliers." }
+          logistics: { title: "Logistique & Transport", desc: "Livraison sécurisée partout en Europe" }
         }
       },
       reservation: {
@@ -231,8 +231,8 @@ export const resources = {
     translation: {
       seo: {
         home: {
-          title: "EuroOccazMotors - Premium Used Cars in France",
-          description: "Discover certified used cars imported from Europe. Exclusive selection of premium guaranteed vehicles. Secure delivery across France.",
+          title: "EuroOccazMotors - Premium Used Cars in Europe",
+          description: "Discover certified used cars imported from Europe. Exclusive selection of premium guaranteed vehicles. Secure delivery across Europe.",
           keywords: "used premium cars, import cars Europe, certified vehicles, premium automobiles"
         },
         cars: {
@@ -315,7 +315,7 @@ export const resources = {
           import: { title: "Direct Import", desc: "Access the full European stock with our field experts." },
           guarantee: { title: "Premium Warranty", desc: "Manufacturer warranty extension up to 5 years." },
           finance: { title: "Express Financing", desc: "24-hour response for your credits and long-term leases." },
-          logistics: { title: "Logistics & Transport", desc: "Secure delivery throughout Europe and neighboring countries." }
+          logistics: { title: "Logistics & Transport", desc: "Secure delivery throughout Europe" }
         }
       },
       reservation: {
@@ -460,8 +460,8 @@ export const resources = {
     translation: {
       seo: {
         home: {
-          title: "EuroOccazMotors - Auto usate premium in Francia",
-          description: "Scopri auto usate certificate importate dall'Europa. Selezione esclusiva di veicoli premium garantiti. Consegna sicura in tutta la Francia.",
+          title: "EuroOccazMotors - Auto usate premium in Europea",
+          description: "Scopri auto usate certificate importate dall'Europa. Selezione esclusiva di veicoli premium garantiti. Consegna sicura in tutta la Europea.",
           keywords: "auto usate premium, import auto Europa, auto certificate, automobili premium"
         },
         cars: {
@@ -544,7 +544,7 @@ export const resources = {
           import: { title: "Importazione Diretta", desc: "Accedi allo stock europeo completo con i nostri esperti." },
           guarantee: { title: "Garanzia Premium", desc: "Estensione della garanzia del produttore fino a 5 anni." },
           finance: { title: "Finanziamento Espresso", desc: "Risposta in 24 ore per crediti e leasing a lungo termine." },
-          logistics: { title: "Logistica e Trasporti", desc: "Consegna sicura in tutta Europa e nei paesi vicini." }
+          logistics: { title: "Logistica e Trasporti", desc: "Consegna sicura in tutta Europa." }
         }
       },
       reservation: {
